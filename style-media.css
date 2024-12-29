@@ -1,0 +1,98 @@
+@media (max-width: 767px) {
+    .card-page-outside {
+        border: 5px solid #fbfbfb;
+    }
+}
+.card-page-inside,
+.card-page-bottom {
+    background-color: #d4d1d0;
+    background-image: url("img/pattern.png");
+    border: 20px solid #d4d1d0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-page-inside {
+    transform: rotateY(-180deg);
+    border-right: none !important;
+    background-position: 0px 80px;
+}
+.card-page-bottom {
+    z-index: 1;
+    border-left: none !important;
+    background-position: -22px 80px;
+    font-size: 18px;
+}
+.card-page-bottom p {
+    line-height: 1.4;
+}
+.merry-christmas {
+    transform: rotate(-10deg);
+}
+.merry-christmas img {
+    width: 300px;
+    height: auto;
+}
+@media (max-width: 767px) {
+    .card-container {
+        height: 500px;
+    }
+    .card {
+        left: calc(50% - 115px);
+        top: calc(50% - 164.5px);
+    }
+    .card.is-opened {
+        transform: rotate(0deg) translate(115px, 0);
+    }
+    .card,
+    .card-page {
+        width: 230px;
+        height: 329px;
+    } 
+    .card-page-inside,
+    .card-page-bottom {
+        border: 10px solid #d4d1d0;
+    }    
+    .card-page-inside {
+        background-position: 0px 30px;    
+    } 
+    .card-page-bottom {
+        background-position: 85px 30px;
+        font-size: 11px;
+    }  
+    .merry-christmas img {
+        width: 180px;
+    }
+}
+@media (max-width: 479px) {
+    .card-container {
+        height: 300px;
+    }
+    .card {
+        left: calc(50% - 75px);
+        top: calc(50% - 107px);
+    }
+    .card.is-opened {
+        transform: rotate(0deg) translate(75px, 0);
+    } 
+    .card,
+    .card-page {
+        width: 150px;
+        height: 214px;
+    } 
+    .card-page-inside {
+        background-position: 0px 30px;
+    } 
+    .card-page-bottom p {
+        line-height: 1;
+    }    
+    .card-page-bottom {
+        background-position: 0px 30px;
+        font-size: 10px;
+    }  
+    .merry-christmas img {
+        width: 130px;
+    }
+}
